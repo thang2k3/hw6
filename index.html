@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display Mouse Coordinates on Click</title>
+  </head>
+  <body>
+    <button onclick="showCoordinates()">Click me</button>
+    <p id="coordinates"></p>
+    
+    <script>
+      function showCoordinates() {
+        var coordinates = document.getElementById("coordinates");
+        coordinates.innerHTML = "Mouse coordinates: (" + event.clientX + ", " + event.clientY + ")";
+      }
+    </script>
+  </body>
+</html>
